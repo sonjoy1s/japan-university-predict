@@ -106,3 +106,6 @@ print(f"Mean Squared Error: {mse}")
 print(f"Mean Absolute Error: {mae}")
 print(f"R^2 Score: {r2}")
 
+with open("japan_university_results.pkl","wb") as file:
+    import pickle
+    pickle.dump(stacking_pipeline,file)
